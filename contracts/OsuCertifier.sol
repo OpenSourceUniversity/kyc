@@ -9,8 +9,7 @@ contract OsuCertifier is Owned, Certifier {
     Certifier public picopsCertifier;
 
     function OsuCertifier() public {
-      // Mainnet: picopsCertifier = Certifier(0x1e2F058C43ac8965938F6e9CA286685A3E63F24E);
-      picopsCertifier = Certifier(0x06C4AF12D9E3501C173b5D1B9dd9cF6DCC095b98);
+      picopsCertifier = Certifier(0x1e2F058C43ac8965938F6e9CA286685A3E63F24E);
     }
 
     function certified(address _who) public constant returns (bool) {
